@@ -1,0 +1,44 @@
+Copy and pasted from Obsidian. I'll see if there is a more efficient way to share.
+
+Goal: Create an OS than can do basic things like run games, connect on the internet (read and write capabilities), and run custom code like python
+
+Start from:
+- Knowledge
+- Virtual Box environment (hardware components)
+Rules:
+- Can use GenAI/Google, but must implement the result at least 1 hour later, no copy and pasting, and from memory
+- Cant use existing code unless there's nothing to learn from adding the code (i.e. ASCII tables)
+
+
+Begin
+
+Subgoal 1: Create a virtual environment that prints "Hello World" upon launch
+Considerations:
+- Need a way to save data in a virtual environment (files)
+- Need a way to display data in a virtual environment.
+- Need a way to express bits -> text in a virtual environment
+Question for Claude: 
+How can i interact with the hardware components allocated by a virtual box to modify storage at the bit level?
+Additional system prompt: Help me accomplish my subgoal by answering the following question, but dont give any extra information
+
+Answer: Check the virtualbox documentation
+
+Though I'm not sure I want to rely on virtualbox for everything, since that means using existing software, I guess it's fine.
+
+For now I will rely on it
+
+Question for Claude:
+It seems like I need an ISO image to create/test my OS in VirtualBox. How can I do this, and what should the ISO look like? 
+
+Answer:
+To create a basic ISO image for testing your OS in VirtualBox:
+
+1. Create a bootloader
+2. Write simple kernel code
+3. Compile bootloader and kernel
+4. Create ISO file structure
+5. Generate ISO image
+
+The ISO should contain your bootloader and kernel files in the proper structure.
+
+Hmm it seems like I need more background knowledge first before I can make my own OS. I will watch Berkeley's CS162 lectures from 2020 and then come back to this.
